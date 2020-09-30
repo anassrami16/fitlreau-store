@@ -1,0 +1,170 @@
+/* quantity number input component*/
+
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    
+    }
+    
+    .number-input input[type=number]::-webkit-inner-spin-button,
+    .number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    }
+    
+    .number-input {
+        
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .number-input button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    outline: none;
+    height: 100% !important;
+    }
+    
+    .number-input button:before,
+    .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+    }
+    
+    .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    }
+    
+    .number-input input[type=number] {
+    text-align: center;
+    }
+    
+    .number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+    }
+    
+    .number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+    }
+    
+    .number-input.number-input button.minus {
+    padding-left: 10px;
+    }
+    
+    .number-input.number-input button:before,
+    .number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+    }
+    
+    .number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+    }
+    
+    @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color:transparent) {
+    
+    .number-input.def-number-input.safari_only button:before,
+    .number-input.def-number-input.safari_only button:after {
+    margin-top: -.3rem;
+    }
+    }
+    }
+/* buy button*/
+.buy_now_container{
+    display: flex;
+    justify-content: center;
+}
+.buy_btn{
+    margin-top: 10px;
+    text-align: center;
+    width: 96%;
+    height: 55px;
+    font-size: 1em;
+    border-radius: 3px;
+    background-color: orange;
+    text-decoration: none;
+    color: #202020;
+    border: none;
+    padding: 0!important;
+    cursor: pointer;
+    
+}
+
+/* first shop button*/
+.btn_shop{
+    text-align: center;
+    width: 106.2px;
+    height: 25px;
+    padding: 16px 24px;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+/*menu exit button*/
+.exit_menu_btn{ 
+    cursor: pointer;
+    padding: 8px 8px;
+    background-color:#f7f7f7;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+/* input ui 1 */
+.field_ui_1{
+    background-color: white;
+    color: #333333;
+    
+    border: 1px #d9d9d9 solid;
+    background-clip: padding-box;
+    border-radius: 5px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.9285714286em 0.7857142857em;
+    word-break: normal;
+    line-height: inherit;
+}
+/* order button ui */
+.btn_order{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    background-color: orange;
+    color: #333333;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 3px;
+}
+
+/* icon holder */
+.left_icon_holder{
+   padding-right: 16px;
+}
