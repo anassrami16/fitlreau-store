@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @SessionAttributes({"card"})
 public class homeController {
 
-    @GetMapping(path = "/home")
+    @GetMapping(path = "/")
     public String home(){
 
         return "home";

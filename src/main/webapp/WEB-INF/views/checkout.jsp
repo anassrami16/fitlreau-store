@@ -50,6 +50,7 @@
             <p>0DH</p>
         </div>
         <hr>
+        w:
         <div class="total">
             <p>total</p>
             <h3>${SimpleCard.priceTotal}DH</h3>
