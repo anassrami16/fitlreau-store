@@ -17,9 +17,7 @@ public class homeController {
 
     @GetMapping(path = "/")
     public String home(){
-
         return "home";
-
     }
     @GetMapping(path = "/product")
     public String product(){
