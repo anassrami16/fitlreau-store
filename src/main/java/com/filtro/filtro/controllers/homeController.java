@@ -54,7 +54,7 @@ public class homeController {
 
     @PostMapping(path = "/checkout")
     public String checkoutPost(Model model, @RequestParam String full_name, @RequestParam String phone, @RequestParam String city, @RequestParam String address) {
-        if (full_name != "" && phone != "" && city != "" && address != "") {
+        if (full_name != "" && phone != "" && city != "") {
             try {
                 userrepo.save(new user(full_name, phone, city, address, ((Product) model.getAttribute("SimpleCard")).getQuantity()));
                 return "valide";
