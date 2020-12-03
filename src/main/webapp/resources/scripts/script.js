@@ -1,12 +1,31 @@
 $(function () {
 
     $('.img_set').on('click', function () {
-        let button_src = $(this).attr("src");
-        let imgsrc= button_src.substr(29,button_src.length+1);
-        $('.main_img').attr("src", "/resources/image/med/med_"+imgsrc);
+        let image_alt = $(this).attr("alt");
+        switch (image_alt) {
+            case "water filter":
+                $('.main_img').attr("src", "/resources/image/landing_page_res/header/filtreau_1.png");
+                $('.viewer-box > img').attr("src", "/resources/image/landing_page_res/header/filtreau_1.png");
+                break;
+            case "cuisine one":
+                $('.main_img').attr("src", "/resources/image/med/med_cuisine_ro.jpg");
+                $('.viewer-box > img').attr("src", "/resources/image/med/med_cuisine_ro.jpg");
+                break;
+            case "cuisine two":
+                $('.main_img').attr("src", "/resources/image/med/med_cuisine_ro_2.jpg");
+                $('.viewer-box > img').attr("src", "/resources/image/med/med_cuisine_ro_2.jpg");
+                break;
+            case "girl drinking water":
+                $('.main_img').attr("src", "/resources/image/med/med_little_girl.jpg");
+                $('.viewer-box > img').attr("src", "/resources/image/med/med_little_girl.jpg");
+                break;
+            case "benefit":
+                $('.main_img').attr("src", "/resources/image/webp_images/ben_img.webp");
+                $('.viewer-box > img').attr("src", "/resources/image/webp_images/ben_img.webp");
+                break;
+        }
 
-        $('.viewer-box > img').attr("src", "/resources/image/med/med_"+imgsrc)
-        
+
     });
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
         $('.main_img').jqZoom({
@@ -40,5 +59,21 @@ function disableScroll() {
 }
 
 function enableScroll() {
-    window.onscroll = function () { };
+    window.onscroll = function () {
+    };
+}
+
+window.addEventListener("load", (e) => {
+    document.querySelector(".hero-header-image").style.height = document.querySelector(".filtreau-image").height + "px";
+
+});
+
+function func1() {
+    let myElement = document.querySelector(".imgs");
+    let topPos = myElement.offsetTop;
+    window.scroll({
+        top: topPos - 70,
+        left: 0,
+        behavior: 'smooth'
+    });
 }

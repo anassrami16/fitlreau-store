@@ -30,6 +30,17 @@
     <div class="cover">
         <img src="${pageContext.request.contextPath}/resources/image/logo.svg" alt="filtreau logo" class="cover_img">
     </div>
+    <div class="small_bar" style=" grid-area: Smallbar;
+    background-color: #107dac;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;">
+        <p class="white font_3">االتوصيل والتركيب بالمجان - الدفع عند الاستلام</p>
+
+    </div>
     <!-- body - ordre_summary -->
     <div class="ordre_summary">
         <hr>
@@ -58,39 +69,45 @@
     </div>
     <!-- body -->
     <div class="contact_info">
-        <form action="/checkout" method="get" class="info_form">
-            <h3 class="ml-s font_3 color_info" >معلومات الاتصال</h3>
+        <form action="${pageContext.request.contextPath}/checkout" method="post" style="padding: 10px">
+            <h3 class="ml-s font_3 color_info" style="text-align: right">معلومات الاتصال</h3>
 
             <div class="entery_field">
                 <!-- nom et prenom entery-->
-
-                <input name="full_name" type="text" class="field_ui_1 font_3" placeholder="الاسم الكامل">
+                <label>الاسم الكامل
+                    <input name="full_name" type="text" class="field_ui_1 font_3">
+                </label>
             </div>
             <br>
 
             <div class="entery_field">
                 <!-- phone number entery-->
-
-                <input type="tel" name="phone" class="field_ui_1 font_3" placeholder="رقم هاتف">
+                <label>رقم هاتف
+                    <input type="tel" name="phone" class="field_ui_1 font_3">
+                </label>
             </div>
             <br>
-            <h3 class="ml-s font_1 color_info font_3" >معلومات الشحن</h3>
+
+            <h3 class="ml-s font_1 color_info font_3" style="text-align: right">معلومات الشحن</h3>
 
             <div class="entery_field">
                 <!-- ville -->
-
-                <input type="text" name="city" class="field_ui_1 font_3" placeholder="المدينة">
+                <label>المدينة
+                    <input type="text" name="city" class="field_ui_1 font_3">
+                </label>
             </div>
             <br>
 
             <div class="entery_field">
                 <!-- address -->
-
-                <input type="text" class="field_ui_1 font_3" name="address" placeholder="العنوان">
+                <label>العنوان
+                    <input type="text" class="field_ui_1 font_3" name="address">
+                </label>
             </div>
             <div class="entery_field">
-                <button class="btn_order">Complete order</button>
+                <button class="btn_order font_3 black">اطلب الان</button>
             </div>
+            <p class="font_3" style="color: #ff2f25 ; text-align: right">${error}</p>
         </form>
     </div>
     <!-- benifit -->

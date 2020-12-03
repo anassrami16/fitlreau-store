@@ -35,10 +35,12 @@
         <!--enter the left menu-->
         <a class="btn_ham" onclick="show_menu()"><i class="fas fa-bars fa-lg color_5"></i></a>
 
-        <img src="${pageContext.request.contextPath}/resources/image/logo.svg" alt="filtreau logo" class="logo">
+        <div class="center_logo"><a class="logo_11" style="text-decoration: none;"
+                                    href="${pageContext.request.contextPath}/"><img
+                src="${pageContext.request.contextPath}/resources/image/logo.svg" alt=""/></a></div>
     </div>
     <div class="small_bar">
-        <p class="white font_3">التوصيل والتركيب بالمجان</p>
+        <p class="white font_3">التوصيل والتركيب بالمجان - الدفع عند الاستلام</p>
 
     </div>
     <div class="contact_us_info">
@@ -46,7 +48,8 @@
         <div class="contact_us_text">
             <h3 class="font_3">كيف تتم عملية التوصيل والتركيب ؟
             </h3>
-            <p class="font_3">بمجرد تقديم طلبك ، سنتصل بك لتأكيد الطلب وتاريخ التثبيت ، وبعد أن يحين موعد التثبيت ، سنرسل فريقًا لتركيب نظام تصفية المياه في منزلك</p>
+            <p class="font_3">بمجرد تقديم طلبك ، سنتصل بك لتأكيد الطلب وتاريخ التثبيت ، وبعد أن يحين موعد التثبيت ،
+                سنرسل فريقًا لتركيب نظام تصفية المياه في منزلك</p>
 
             <p class="font_3">نحن نقوم بالتوصيل في جميع انحاء المغرب
             </p>
@@ -104,16 +107,21 @@
         </div>
         <div class="store_links">
             <ul style="list-style: none;">
-                <li><a href="${pageContext.request.contextPath}/home" class="font_3 f_size_1 no_decoration black">الصفحة الرئيسية</a></li>
-                <li><a href="${pageContext.request.contextPath}/product" class="font_3 f_size_1 no_decoration black">متجر</a></li>
-                <li><a href="${pageContext.request.contextPath}/contactus" class="font_3 f_size_1 no_decoration black">اتصل بنا</a></li>
+                <li><a href="${pageContext.request.contextPath}/" class="font_3 f_size_1 no_decoration black">الصفحة
+                    الرئيسية</a></li>
+                <li><a href="${pageContext.request.contextPath}/product" class="font_3 f_size_1 no_decoration black">متجر</a>
+                </li>
+                <li><a href="${pageContext.request.contextPath}/contactus" class="font_3 f_size_1 no_decoration black">اتصل
+                    بنا</a></li>
             </ul>
             <br>
             <hr>
             <ul style="list-style: none;">
 
-                <li><a href="${pageContext.request.contextPath}/contactus" class="font_3 f_size_2 no_decoration black">اتصل بنا</a></li>
-                <li><a href="${pageContext.request.contextPath}/sandd" class="font_3 f_size_2 no_decoration black">الشحن والتسليم والتركيب</a></li>
+                <li><a href="${pageContext.request.contextPath}/contactus" class="font_3 f_size_2 no_decoration black">اتصل
+                    بنا</a></li>
+                <li><a href="${pageContext.request.contextPath}/sandd" class="font_3 f_size_2 no_decoration black">الشحن
+                    والتسليم والتركيب</a></li>
             </ul>
         </div>
     </div>

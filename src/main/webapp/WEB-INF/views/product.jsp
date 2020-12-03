@@ -20,10 +20,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/style/style.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/style/component.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/style/jquery.jqZoom.css">
-    <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/scripts/jquery.jqZoom.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/scripts/script.js"></script>
+
     <!-- links -->
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
@@ -37,25 +34,35 @@
         <!--enter the left menu-->
         <a class="btn_ham" onclick="show_menu()"><i class="fas fa-bars fa-lg color_5"></i></a>
 
-        <img src="${pageContext.request.contextPath}/resources/image/logo.svg" alt="filtreau logo" class="logo">
+        <div class="center_logo"><a class="logo_11" style="text-decoration: none;"
+                                    href="${pageContext.request.contextPath}/"><img
+                src="${pageContext.request.contextPath}/resources/image/logo.svg" alt=""/></a></div>
     </div>
     <div class="small_bar">
-        <p class="white font_3">التوصيل والتركيب بالمجان</p>
+        <p class="white font_3">التوصيل والتركيب بالمجان - الدفع عند الاستلام
+        </p>
 
     </div>
     <div class="img_gal">
 
         <div class="slick_container">
 
-            <div class="img_container zoom-box"><img src="${pageContext.request.contextPath}/resources/image/med/med_image_1.jpg" alt="filtre image" width="343" height="343"
-                                                     class="main_img"> </div>
+            <div class="img_container zoom-box"><img
+                    src="${pageContext.request.contextPath}/resources/image/med/med_image_1.jpg" alt="filtre image"
+                    width="343" height="343"
+                    class="main_img"></div>
             <div class="imgs0">
                 <div class="imgs">
-                    <img src="${pageContext.request.contextPath}/resources/image/small/small_image_1.jpg" alt="filtre image" width="100" height="100" class="img_set" >
-                    <img src="${pageContext.request.contextPath}/resources/image/small/small_cuisine_ro_2.jpg" alt="filtre image" width="100" height="100" class="img_set">
-                    <img src="${pageContext.request.contextPath}/resources/image/small/small_little_girl.jpg" alt="filtre image" width="100" height="100" class="img_set">
-                    <img src="${pageContext.request.contextPath}/resources/image/small/small_cuisine_ro.jpg" alt="filtre image" width="100" height="100" class="img_set">
-                    <img src="${pageContext.request.contextPath}/resources/image/small/small_desc_img_2.jpg" alt="filtre image" width="100" height="100" class="img_set">
+                    <img src="${pageContext.request.contextPath}/resources/image/landing_page_res/header/filtreau_1.png"
+                         alt="water filter" width="100px" height="100px" class="img_set">
+                    <img src="${pageContext.request.contextPath}/resources/image/small/small_cuisine_ro.jpg"
+                         alt="cuisine one" width="100px" height="100px" class="img_set">
+                    <img src="${pageContext.request.contextPath}/resources/image/small/small_cuisine_ro_2.jpg"
+                         alt="cuisine two" width="100px" height="100px" class="img_set">
+                    <img src="${pageContext.request.contextPath}/resources/image/small/small_little_girl.jpg"
+                         alt="girl drinking water" width="100px" height="100px" class="img_set">
+                    <img src="${pageContext.request.contextPath}/resources/image/webp_images/ben_img.webp" alt="benefit"
+                         width="100px" height="100px" class="img_set">
                 </div>
             </div>
 
@@ -78,17 +85,20 @@
                     <form action="${pageContext.request.contextPath}/checkout" method="get">
                         <div class="quantity">
                             <div class="def-number-input number-input safari_only">
-                                <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                <button type="button"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                         class="minus" aria-label="minus"></button>
                                 <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                <button type="button"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
                                         class="plus" aria-label="plus"></button>
                             </div>
 
                         </div>
                         <!-- order now button -->
-                        <div class="buy_now_container"><button  class="buy_btn font_3">اطلب الان
-                        </button>
+                        <div class="buy_now_container">
+                            <button class="buy_btn_2 font_3">اطلب الان
+                            </button>
                         </div>
                     </form>
 
@@ -200,20 +210,28 @@
         </div>
         <div class="store_links">
             <ul style="list-style: none;">
-                <li><a href="${pageContext.request.contextPath}/home" class="font_3 f_size_1 no_decoration black">الصفحة الرئيسية</a></li>
-                <li><a href="${pageContext.request.contextPath}/product" class="font_3 f_size_1 no_decoration black">متجر</a></li>
-                <li><a href="${pageContext.request.contextPath}/contactus" class="font_3 f_size_1 no_decoration black">اتصل بنا</a></li>
+                <li><a href="${pageContext.request.contextPath}/" class="font_3 f_size_1 no_decoration black">الصفحة
+                    الرئيسية</a></li>
+                <li><a href="${pageContext.request.contextPath}/product" class="font_3 f_size_1 no_decoration black">متجر</a>
+                </li>
+                <li><a href="${pageContext.request.contextPath}/contactus" class="font_3 f_size_1 no_decoration black">اتصل
+                    بنا</a></li>
             </ul>
             <br>
             <hr>
             <ul style="list-style: none;">
 
-                <li><a href="${pageContext.request.contextPath}/contactus" class="font_3 f_size_2 no_decoration black">اتصل بنا</a></li>
-                <li><a href="${pageContext.request.contextPath}/sandd" class="font_3 f_size_2 no_decoration black">الشحن والتسليم والتركيب</a></li>
+                <li><a href="${pageContext.request.contextPath}/contactus" class="font_3 f_size_2 no_decoration black">اتصل
+                    بنا</a></li>
+                <li><a href="${pageContext.request.contextPath}/sandd" class="font_3 f_size_2 no_decoration black">الشحن
+                    والتسليم والتركيب</a></li>
             </ul>
         </div>
     </div>
 </div>
 </body>
-
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/scripts/jquery.jqZoom.js"></script>
+<script src="${pageContext.request.contextPath}/resources/scripts/script.js"></script>
 </html>

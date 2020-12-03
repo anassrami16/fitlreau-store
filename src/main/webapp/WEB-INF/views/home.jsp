@@ -34,7 +34,9 @@
         <!--enter the left menu-->
         <a class="btn_ham" onclick="show_menu()"><i class="fas fa-bars fa-lg color_5"></i></a>
 
-        <img src="${pageContext.request.contextPath}/resources/image/logo.svg" alt="logo filtreau company" class="logo">
+        <div class="center_logo"><a class="logo_11" style="text-decoration: none;"
+                                    href="${pageContext.request.contextPath}/"><img
+                src="${pageContext.request.contextPath}/resources/image/logo.svg" alt=""/></a></div>
     </div>
     <!-- body -->
     <div class="body_container">
