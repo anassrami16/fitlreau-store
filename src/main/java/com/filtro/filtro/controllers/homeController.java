@@ -3,6 +3,7 @@ package com.filtro.filtro.controllers;
 
 import com.filtro.filtro.Card.Product;
 import com.filtro.filtro.repos.UserRepo;
+import com.filtro.filtro.services.EmailServiceImpl;
 import com.filtro.filtro.userInfo.user;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 @Scope("session")
 @SessionAttributes({"SimpleCard"})
 public class homeController {
+    @Autowired
+    EmailServiceImpl emailService;
     @Autowired
     public UserRepo userrepo;
 
@@ -37,13 +40,16 @@ public class homeController {
     }
 
     @GetMapping(path = "/checkout")
-    public String checkout(@RequestParam int quantity, Model model, @RequestParam(required = false) String err) {
+    public String checkout(@RequestParam(defaultValue = "-1") int quantity, Model model, @RequestParam(required = false) String err) {
+        if (quantity == -1) {
+            return "redirect:/";
+        }
         if (err != null) {
             model.addAttribute("error", "المرجو ادخال جميع المعطيات بشكل صحيح");
             return "checkout";
         } else if (quantity != 0) {
 
-            Product p1 = new Product("Filtreau - Systeme d'osmose inverse 7 étape", quantity, 2300);
+            Product p1 = new Product("Filtreau - Systeme d'osmose inverse 7 étape", quantity, 2150);
             model.addAttribute("SimpleCard", p1);
             return "checkout";
         } else {
@@ -57,6 +63,11 @@ public class homeController {
         if (full_name != "" && phone != "" && city != "") {
             try {
                 userrepo.save(new user(full_name, phone, city, address, ((Product) model.getAttribute("SimpleCard")).getQuantity()));
+                try {
+                    emailService.sendSimpleMessage("anassrami16@gmail.com", "New oreder from " + full_name, "full information -  name:" + full_name + "  phone:" + phone + "  city:" + city);
+                } catch (Exception e) {
+                    return "valide";
+                }
                 return "valide";
             } catch (Exception e) {
                 Product p1 = (Product) model.getAttribute("SimpleCard");

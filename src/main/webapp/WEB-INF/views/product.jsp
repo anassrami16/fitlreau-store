@@ -48,8 +48,8 @@
         <div class="slick_container">
 
             <div class="img_container zoom-box"><img
-                    src="${pageContext.request.contextPath}/resources/image/med/med_image_1.jpg" alt="filtre image"
-                    width="343" height="343"
+                    src="${pageContext.request.contextPath}/resources/image/landing_page_res/header/filtreau_1.png"
+                    alt="" width="343" height="343"
                     class="main_img"></div>
             <div class="imgs0">
                 <div class="imgs">
@@ -88,7 +88,7 @@
                                 <button type="button"
                                         onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                         class="minus" aria-label="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <input class="quantity" min="1" max="20" name="quantity" value="1" type="number">
                                 <button type="button"
                                         onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
                                         class="plus" aria-label="plus"></button>

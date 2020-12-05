@@ -174,7 +174,7 @@
                                 <button type="button"
                                         onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                                         class="minus" aria-label="minus"></button>
-                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <input class="quantity" min="1" max="20" name="quantity" value="1" type="number">
                                 <button type="button"
                                         onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
                                         class="plus" aria-label="plus"></button>

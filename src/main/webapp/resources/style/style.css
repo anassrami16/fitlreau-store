@@ -137,6 +137,10 @@ body {
     text-decoration-line: line-through;
 }
 
+.new_price {
+    font-size: larger;
+}
+
 .btn_ham {
     cursor: pointer;
     margin-left: 10px;

@@ -38,7 +38,7 @@
     <!-- body -->
     <div class="contact_info valide_msg">
         <i class="far fa-check-circle fa-7x" style="color: rgb(65, 151, 65);"></i>
-        <h1 class="cairo">سيتم التصال بكم بعد قليل لتأكيد طلبكم</h1>
+        <h1 class="cairo">سيتم الاتصال بكم بعد قليل لتأكيد طلبكم</h1>
     </div>
     <!-- benifit -->
     <div class="benifit">

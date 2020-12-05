@@ -70,7 +70,7 @@
     <!-- body -->
     <div class="contact_info">
         <form action="${pageContext.request.contextPath}/checkout" method="post" style="padding: 10px">
-            <h3 class="ml-s font_3 color_info" style="text-align: right">معلومات الاتصال</h3>
+
 
             <div class="entery_field">
                 <!-- nom et prenom entery-->
@@ -88,7 +88,6 @@
             </div>
             <br>
 
-            <h3 class="ml-s font_1 color_info font_3" style="text-align: right">معلومات الشحن</h3>
 
             <div class="entery_field">
                 <!-- ville -->
